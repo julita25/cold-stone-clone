@@ -35,7 +35,7 @@ function Footer() {
                         <Link to='./'>Cold stone embassadors</Link>
                     </div>
                     <div className="link-items">
-                        <h2>Interact with us</h2>
+                        <h2>Lets Interact</h2>
                         <Link to='./'>Suggestions</Link>
                         <Link to='./'>Leave your review</Link>
                         <Link to='./'>Become an embassador</Link>
