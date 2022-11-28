@@ -1,3 +1,4 @@
+import { string } from "prop-types";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -20,5 +21,11 @@ function CardItem({ src, label, text }) {
     </li>
   );
 }
+
+CardItem.propTypes = {
+  src: string.isRequired,
+  label: string.isRequired,
+  text: string.isRequired
+};
 
 export default CardItem;

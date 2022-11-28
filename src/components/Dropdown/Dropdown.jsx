@@ -5,14 +5,17 @@ import "./dropdown.css";
 
 function Dropdown() {
   const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+
   return (
-    <ul
-      onClick={handleClick}
+    <div
+      role="button"
+      tabIndex="0"
+      onKeyDown={() => setClick(!click)}
+      onClick={() => setClick(!click)}
       className={click ? "dropdown-menu-clicked" : "dropdown-menu"}
     >
-      {MenuItems.map((item, index) => (
-        <li key={index}>
+      {MenuItems.map((item) => (
+        <div key={item.cName}>
           <Link
             className={item.cName}
             to={item.path}
@@ -20,9 +23,9 @@ function Dropdown() {
           >
             {item.title}
           </Link>
-        </li>
+        </div>
       ))}
-    </ul>
+    </div>
   );
 }
 

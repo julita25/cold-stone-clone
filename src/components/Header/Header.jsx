@@ -8,7 +8,6 @@ function Header() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
 
-  const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
   const onMouseEnt = () => {
@@ -34,7 +33,13 @@ function Header() {
         src={Logo}
         alt="Cold Stone logo"
       />
-      <div className="menu-icon" onClick={handleClick}>
+      <div
+        className="menu-icon"
+        onClick={() => setClick(!click)}
+        role="button"
+        tabIndex={0}
+        onKeyDown={() => setClick(!click)}
+      >
         <i className={click ? "fas fa-times" : "fas fa-bars"} />
         {/* i is for icon */}
       </div>
@@ -74,7 +79,6 @@ function Header() {
           <Link to="/contact us" className="nav-links" onClick={closeMobileMenu}>
             Contact us
           </Link>
-
         </li>
       </ul>
     </nav>

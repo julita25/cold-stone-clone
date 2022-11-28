@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import { dataOffers } from "../data-content/slider-data";
+import DataOffers from "../data-content/slider-data";
 import Cards from "../components/Cards/Cards";
 import Promo from "../components/Promos/Promos";
 import MainSection from "../components/MainSection/MainSection";
@@ -10,7 +10,7 @@ function Home() {
     <>
       <MainSection />
       <Cards />
-      <Promo slides={dataOffers} />
+      <Promo slides={DataOffers} />
     </>
   );
 }

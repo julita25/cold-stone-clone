@@ -7,7 +7,7 @@ import cake from "../../images/cake.jpg";
 import "./cards.css";
 
 function Cards() {
-  (
+  return (
     <div className="cards">
       <h1>Take a look to the favourites of the house</h1>
       <div className="cards__container">
