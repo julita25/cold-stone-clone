@@ -1,9 +1,9 @@
 import React from 'react'
 import CardItem from './CardItem'
-import strawberry from './images/strawberry.jpg'
-import choco from './images/choco-dev.jpg'
-import oreo from './images/oreo.jpg'
-import cake from './images/cake.jpg'
+import strawberry from '../../images/strawberry.jpg'
+import choco from '../../images/choco-dev.jpg'
+import oreo from '../../images/oreo.jpg'
+import cake from '../../images/cake.jpg'
 import './cards.css'
 
 //holds each of the cards

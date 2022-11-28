@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {MenuItems} from './data-content/MenuItems';
+import {MenuItems} from '../../data-content/MenuItems';
 import {Link} from 'react-router-dom';
 import './dropdown.css'
 

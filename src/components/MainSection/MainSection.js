@@ -1,6 +1,6 @@
 import React from 'react'
-import cold_stone from './images/cold-stone.png'
-import './App.css'
+import cold_stone from '../../images/cold-stone.png'
+import '../../App.css'
 import './main.css'
 
 
