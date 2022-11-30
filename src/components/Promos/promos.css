@@ -40,15 +40,13 @@
   width: 180%;
   height: 100vh;
   bottom: 0vh;
-  left: 0; /*position it 0px from the left edge of its neares positioned ancestor*/
+  left: 0;
   overflow: hidden;
   opacity: 0.4;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.1) 0%,
-    rgba(0, 0, 0, 0.2) 50%,
-    rgba(0, 0, 0, 0.3) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.2) 50%,
+      rgba(0, 0, 0, 0.3) 100%);
 }
 
 .img-promo {
@@ -71,13 +69,9 @@
 }
 
 .content h1 {
-  /*vh: viewport height/ width*/
-  font-size: clamp(
-    0.5rem,
-    4vw,
-    5rem
-  ); /*clamps h1 between upper and lpwer range*/
-  /*min value, preferred value, mac value*/
+  font-size: clamp(0.5rem,
+      4vw,
+      5rem);
   text-align: left;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   margin-bottom: 0.8rem;
@@ -100,9 +94,6 @@
 }
 
 .arrow-btn {
-  /*each arrow fig*/
-  /*arrowButtons*/
-
   width: 50px;
   height: 50px;
   color: #fff;

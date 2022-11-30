@@ -23,7 +23,6 @@ function Promos({ slides }) {
   return (
     <div className="promo-box">
       <div className="wrapper">
-        Take a look to the lates promos!!
         {slides.map((slide, index) => (
           <div className="slide" key={slide.title}>
             {index === picture && (

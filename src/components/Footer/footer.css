@@ -8,7 +8,6 @@
 }
 
 .footer-subs {
-  /*the are for the user to input email*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,8 +18,7 @@
   color: #fff;
 }
 
-.footer-subs > p {
-  /*takes all nested p's*/
+.footer-subs>p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -47,7 +45,6 @@
 }
 
 .input::placeholder {
-  /*targets only 'enter email'*/
   color: #b1b1b1;
 }
 
@@ -56,7 +53,6 @@
 }
 
 .links {
-  /*contains all the information of the footer after subscribe*/
   width: 100%;
   display: flex;
   justify-content: center;
@@ -64,21 +60,17 @@
 }
 
 .wrapper {
-  /*only contains the links */
-  display: flex; /*displayed as columns*/
+  display: flex;
 }
 
 .link-items {
-  /*each of the colums*/
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 16px;
   text-align: left;
   width: 160px;
-  box-sizing: border-box; /*includes any padding and margin in an element total width an height*/
-  /*width + padding + border = actual width of an element
-  height + padding + border = actual height of an element*/
+  box-sizing: border-box;
 }
 
 .link-items h2 {
@@ -87,14 +79,12 @@
 }
 
 .link-items a {
-  /*takes each of the links*/
   color: #fff;
-  text-decoration: none; /*takes out the underlink*/
+  text-decoration: none;
   margin-bottom: 8px;
 }
 
 .link-items a:hover {
-  /*takes each of the links*/
   color: #e9e9e9;
   transition: 0.3s ease-out;
 }
@@ -103,7 +93,7 @@
   cursor: pointer;
   height: 42px;
   max-width: 124px;
-  color: #fff; /*COLOR OF BUTTON LETTERSS*/
+  color: #fff;
   outline: none;
   border: none;
   font-weight: 700;
@@ -118,13 +108,12 @@
 }
 
 .sub-btn:hover {
-  /*for when we hover over the buttons*/
-  color: black; /*color when hovering*/
+  color: black;
+  /*color when hovering*/
   background-color: #e6e6e6;
   transition: all 0.2s;
 }
 
-/*customising each social icon*/
 .social-icon-link {
   color: #fff;
   font-size: 24px;
@@ -152,17 +141,6 @@
   width: 150px;
 }
 
-/*.logo {
-    color:#fff;
-    justify-self: start;
-    margin-left: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    display: flex;
-    align-self: center;
-  }*/
-
 .website-rights {
   color: #fff;
   margin-bottom: 16px;
@@ -178,12 +156,10 @@
   }
 
   .wrapper {
-    /*contains all sections of info*/
     flex-direction: column;
   }
 
   .media-wrapper {
-    /*contains logo and social media*/
     flex-direction: column;
   }
 }

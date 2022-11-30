@@ -1,5 +1,4 @@
 .cards {
-  /*contains the second section*/
   margin-top: 450px;
   padding: 3rem;
   background: darksalmon;
@@ -8,10 +7,10 @@
 h1 {
   text-align: center;
   margin-bottom: 30px;
+  color: #fff;
 }
 
 .cards__container {
-  /*holds each card*/
   display: flex;
   background-color: #fff;
   flex-flow: column;
@@ -27,12 +26,10 @@ h1 {
 }
 
 .cards__items {
-  /*the elements inside the card*/
   margin-bottom: 24px;
 }
 
 .cards__item {
-  /*for cardItem component*/
   display: flex;
   flex: 1;
   margin: 0 0.5rem;
@@ -44,13 +41,11 @@ h1 {
   display: flex;
   flex-flow: column;
   width: 100%;
-  /*height: 100%;*/
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   border-radius: 10px;
-  overflow: hidden; /*if the image is to big to fit the card then clipped it
-    (does not add a scrollbar)*/
+  overflow: hidden;
   text-decoration: none;
 }
 
@@ -67,8 +62,6 @@ h1 {
 }
 
 .cards__item__pic-wrap::after {
-  /*after: insert after any content
-    a particular css (in this case content is the img)*/
   content: attr(data-category);
   position: absolute;
   bottom: 0;
@@ -98,7 +91,7 @@ h1 {
 }
 
 .cards__item__img:hover {
-  transform: scale(1.1); /*when hover over img apply zoom*/
+  transform: scale(1.1);
 }
 
 .cards__item__info {
@@ -111,33 +104,6 @@ h1 {
   line-height: 24px;
 }
 
-/*@media only screen and (min-width: 1200px) {
-    .cards__item {
-      width: 250px;
-    }
-  }
-  
-  @media only screen and (min-width: 1024px) {
-    .cards__items {
-      display: flex;
-    }
-  }
-  
-  @media only screen and (max-width: 900px) {
-    .cards__item {
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-    }
-  
-    .cards {
-      padding: 5rem;
-    }
-  
-    .cards__container {
-      margin-top: 50px;
-    }
-  }*/
-
 @media only screen and (min-width: 1200px) {
   .content__blog__container {
     width: 80%;
@@ -149,22 +115,9 @@ h1 {
     display: flex;
   }
 }
+
 @media only screen and (max-width: 1024px) {
   .cards__item {
     margin-bottom: 2rem;
   }
 }
-
-/*@media only screen and (max-width: 800px) {
-    .cards__item {
-      margin-bottom: 2rem;
-    }
-  
-    .cards__wrapper {
-      padding: 2rem;
-    }
-    .cards__container {
-      margin: 1.5;
-      padding: 0 2rem;
-    }
-  }*/
