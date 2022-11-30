@@ -6,7 +6,7 @@ import { instanceOf } from "prop-types";
 
 function Promos({ slides }) {
   const [picture, setPicture] = useState(0);
-  const { length } = slides;// constains the total number of slides (value 4)
+  const { length } = slides;
 
   const nextSlide = () => {
     setPicture(picture === length - 1 ? 0 : picture + 1);
@@ -23,7 +23,7 @@ function Promos({ slides }) {
   return (
     <div className="promo-box">
       <div className="wrapper">
-        "Take a look to the lates promos!!"
+        Take a look to the lates promos!!
         {slides.map((slide, index) => (
           <div className="slide" key={slide.title}>
             {index === picture && (
