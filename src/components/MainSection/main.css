@@ -19,12 +19,12 @@ video {
   object-fit: contain;
 }
 
-.banner-contents > h1 {
+.banner-contents>h1 {
   font-size: 70px;
   justify-content: center;
 }
 
-.banner-contents > p {
+.banner-contents>p {
   color: darkgoldenrod;
   font-size: 45px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -32,28 +32,36 @@ video {
 }
 
 .banner__contents {
-  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
   padding-top: 140px;
   height: 190px;
 }
+
 .banner__buttons {
-  margin-top: 20px;
+  width: auto;
   justify-content: center;
+  margin-top: 30px;
   align-items: center;
   display: flex;
-  margin-bottom: 100px;
 }
+
 .banner__button {
   cursor: pointer;
   height: 50px;
   max-width: 120px;
-  color: #fff; /*COLOR OF BUTTON LETTERSS*/
+  color: #fff;
   outline: none;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   border-radius: 0.2vw;
   padding-left: 1.5rem;
-  padding-right: 1rem;
+  padding-right: 1.5rem;
   margin-right: 1.5rem;
   padding-top: 0.5rem;
   background-color: rgba(194, 107, 107, 0.5);
@@ -61,29 +69,29 @@ video {
 }
 
 .banner__button:hover {
-  /*for when we hover over the buttons*/
-  color: crimson; /*color when hovering*/
+  color: crimson;
   background-color: #e6e6e6;
   transition: all 0.2s;
 }
+
 .img1 {
   height: 130%;
 }
 
 @media screen and (max-width: 960px) {
-  .banner-contents > h1 {
+  .banner-contents>h1 {
     font-size: 50px;
     margin-top: -20px;
   }
 }
 
 @media screen and (max-width: 760px) {
-  .banner-contents > h1 {
+  .banner-contents>h1 {
     font-size: 38px;
     margin-top: -20px;
   }
 
-  .banner-contents > p {
+  .banner-contents>p {
     font-size: 28px;
   }
 

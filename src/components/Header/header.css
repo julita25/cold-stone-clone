@@ -2,7 +2,7 @@
   background: #e24e1b;
   height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
 }
@@ -10,17 +10,17 @@
 .header-logo {
   width: 90px;
   position: fixed;
-  left: 20px;
+  top: 10px;
+  left: 10px;
   cursor: pointer;
-  object-fit: contain; /*contain so that it takes care of aspect ratio*/
+  object-fit: contain;
+  /*contain so that it takes care of aspect ratio*/
 }
 
 .nav-menu {
-  display: grid; /*displays the menu horizontally*/
-  grid-template-columns: repeat(
-    5,
-    auto
-  ); /*defines the amiun of columns for the grid*/
+  display: grid;
+  grid-template-columns: repeat(5,
+      auto);
   grid-gap: 20px;
   list-style: none;
   text-align: center;
@@ -30,28 +30,25 @@
 }
 
 .nav-item {
-  /*each element of the menu has this class*/
   display: flex;
   align-items: center;
-  height: 60px; /*each element is gicen a height with respect to the navbar*/
+  height: 60px;
 }
 
 .nav-links {
-  color: white; /*as each element on navbar has a link to target it
-    to change color we must use a clss for the link specifically*/
+  color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
 
 .nav-links:hover {
-  /*when u hover the link*/
   background-color: #f2c078;
   border-radius: 4px;
   transition: all 0.2s ease-out;
 }
 
 .fa-bars {
-  color: #fff; /*bars set to white color*/
+  color: #fff;
 }
 
 .nav-links-mobile {
@@ -59,13 +56,11 @@
 }
 
 .menu-icon {
-  /*vuelve las barritas invisibles*/
   display: none;
 }
 
 @media screen and (max-width: 960px) {
-  /*the following values are applied
-    until the screen reaches to a max of 960px*/
+
   .NavbarItems {
     position: relative;
   }
@@ -73,10 +68,11 @@
   .nav-menu {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     width: 100%;
-    height: 90vh;
+    height: 100%;
     position: absolute;
-    top: 80px;
+    top: 55px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -84,7 +80,7 @@
 
   .nav-menu.active {
     background: #f2c078;
-    top: 0;
+    top: 55px;
     left: 0;
     opacity: 1;
     transition: all 0.8s ease;
@@ -93,13 +89,13 @@
 
   .nav-links {
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
     width: 100%;
     display: table;
   }
 
   .nav-links:hover {
-    background-color: #f2c078;
+    background-color: #e0b983;
     border-radius: 0;
   }
 
@@ -112,19 +108,17 @@
   }
 
   .menu-icon {
-    /*the bars are made visible*/
     display: block;
     position: absolute;
     height: 20px;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%); /*position of the bars*/
+    transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
   }
 
   .fa-times {
-    /*when clicked the menu item the x is white color too*/
     color: #fff;
     font-size: 2rem;
   }

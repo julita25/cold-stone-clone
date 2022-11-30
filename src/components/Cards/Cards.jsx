@@ -14,7 +14,7 @@ function Cards() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              sssrc={strawberry}
+              src={strawberry}
               text="Delicious strawberry flavour mixed with our
                 authentic vanilla and cookie crumbles"
               label="#strawberryLicious"
